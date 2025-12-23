@@ -3,6 +3,7 @@ package com.oleksiivlasiuk.internaltools.controller;
 import com.oleksiivlasiuk.internaltools.dto.UserDto;
 import com.oleksiivlasiuk.internaltools.model.User;
 import com.oleksiivlasiuk.internaltools.repository.UserRepository;
+import io.swagger.v3.oas.annotations.Operation;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -17,6 +18,7 @@ public class UserController {
         this.userRepository = userRepository;
     }
 
+    @Operation(summary = "Get all users")
     @GetMapping("/users")
     public List<UserDto> getAllUsers() {
         return userRepository.findAll()
