@@ -1,5 +1,8 @@
 package com.oleksiivlasiuk.internaltools.dto;
 
+import io.swagger.v3.oas.annotations.media.Schema;
+
+@Schema(description = "User response")
 public class UserDto {
 
     private Long id;

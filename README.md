@@ -4,7 +4,7 @@ Spring Boot backend for a lightweight internal management system.
 
 ## Tech stack
 - Java 21
-- Spring Boot
+- Spring Boot 3
 - PostgreSQL
 - Flyway
 - OpenAPI (Swagger)
